@@ -9,6 +9,14 @@
 
 # MuZero General
 
+## Texas Hold'em
+This repository contains a modified version of the MuZero General implementation to support Texas Hold'em poker.
+
+The main changes are:
+- A new `TexasHoldem` class in `games/texas_holdem.py` that initializes the game state and defines the rules of Texas Hold'em.
+- A new `TexasHoldemConfig` class in `games/texas_holdem.py` that specifies the configuration for training and self-play.
+
+## Original README
 A commented and [documented](https://github.com/werner-duvaud/muzero-general/wiki/MuZero-Documentation) implementation of MuZero based on the Google DeepMind [paper](https://arxiv.org/abs/1911.08265) (Schrittwieser et al., Nov 2019) and the associated [pseudocode](https://arxiv.org/src/1911.08265v2/anc/pseudocode.py).
 It is designed to be easily adaptable for every games or reinforcement learning environments (like [gym](https://github.com/openai/gym)). You only need to add a [game file](https://github.com/werner-duvaud/muzero-general/tree/master/games) with the hyperparameters and the game class. Please refer to the [documentation](https://github.com/werner-duvaud/muzero-general/wiki/MuZero-Documentation) and the [example](https://github.com/werner-duvaud/muzero-general/blob/master/games/cartpole.py).
 This implementation is primarily for educational purpose.\
